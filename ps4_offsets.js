@@ -524,13 +524,11 @@ PS4["12.02"] = Object.assign({}, PS4["12.00"], {
 // stage 1, loudly and harmlessly, rather than corrupting anything.
 //
 // Takes patches/1250.bin, since a 1252.bin does not exist.
-PS4["12.52"] = Object.assign({}, PS4["12.50"], {
-    alias_of: "12.50",
-    fw_status: "state=UNTESTED-on-hardware shares=12.50 "
-        + "webkit=assumed-identical-to-12.50 (no 12.52 module dump) "
-        + "kernel_rvas=asserted-by-supplied-table UNVERIFIED "
-        + "kpatch=1250.bin bug=poops",
-    kpatch: "1250.bin",
+PS4["14.00"] = Object.assign({}, PS4["13.00"], {
+  alias_of: "13.00",
+  fw_status: "state=UNTESTED webkit=assumed-identical kernel=patched bug=poops",
+  kpatch: "1300.bin",
+
 });
 
 export function offsetsFor(uaString) {

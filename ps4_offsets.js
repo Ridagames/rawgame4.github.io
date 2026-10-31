@@ -536,6 +536,7 @@ PS4["14.00"] = Object.assign({}, PS4["13.00"], {
   alias_of: "13.00",
   fw_status: "state=UNTESTED webkit=assumed-identical kernel=patched bug=poops",
   kpatch: "1300.bin",
+  k__error: 0x29e70,
 });
 export function offsetsFor(uaString) {
     const m = (uaString || "").match(/PlayStation\s+4[\/ ](\d+)\.(\d+)/);
